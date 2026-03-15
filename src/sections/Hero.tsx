@@ -22,7 +22,7 @@ export function Hero() {
           className="mb-6"
         >
           <img
-            src="/profile.png"
+            src={`${import.meta.env.BASE_URL}profile.png`}
             alt={name}
             className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover object-top mx-auto shadow-2xl border-8 border-white dark:border-zinc-800 mb-8 transition-colors duration-300"
             referrerPolicy="no-referrer"
