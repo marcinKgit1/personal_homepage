@@ -4,7 +4,8 @@ Nowoczesne portfolio Front-End Developera z obsługą dwóch języków, motywem 
 
 ## Demo
 
-- Live demo: https://ai.studio/apps/99b4b5fa-8b84-4104-8ca4-a07ba4107dff
+- **Live demo (GitHub Pages):** https://marcinkgit1.github.io/personal_homepage/
+- Kod źródłowy: https://github.com/marcinKgit1/personal_homepage
 
 ## Funkcje
 

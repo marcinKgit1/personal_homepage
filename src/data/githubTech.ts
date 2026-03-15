@@ -1,4 +1,4 @@
-const CACHE_KEY = 'github-tech-cache-v1';
+const CACHE_KEY = "github-tech-cache-v1";
 const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
 
 interface RepoSummary {
@@ -12,11 +12,11 @@ interface CachedTech {
 
 function normalizeGitHubTech(tech: string): string {
   const map: Record<string, string> = {
-    JavaScript: 'JavaScript (ES6+)',
-    TypeScript: 'TypeScript',
-    HTML: 'HTML5',
-    CSS: 'CSS3',
-    Rust: 'Rust (podstawy)',
+    JavaScript: "JavaScript (ES6+)",
+    TypeScript: "TypeScript",
+    HTML: "HTML5",
+    CSS: "CSS3",
+    Rust: "Rust (podstawy)",
   };
 
   return map[tech] ?? tech;
@@ -25,11 +25,11 @@ function normalizeGitHubTech(tech: string): string {
 function getUsernameFromGitHubUrl(url: string): string | null {
   try {
     const parsed = new URL(url);
-    if (parsed.hostname !== 'github.com') {
+    if (parsed.hostname !== "github.com") {
       return null;
     }
 
-    const [username] = parsed.pathname.replace(/^\//, '').split('/');
+    const [username] = parsed.pathname.replace(/^\//, "").split("/");
     return username || null;
   } catch {
     return null;
@@ -67,7 +67,9 @@ function writeCache(username: string, technologies: string[]) {
   }
 }
 
-export async function fetchGitHubTechnologies(githubUrl: string): Promise<string[]> {
+export async function fetchGitHubTechnologies(
+  githubUrl: string,
+): Promise<string[]> {
   const username = getUsernameFromGitHubUrl(githubUrl);
   if (!username) {
     return [];
@@ -78,7 +80,9 @@ export async function fetchGitHubTechnologies(githubUrl: string): Promise<string
     return cached;
   }
 
-  const response = await fetch(`https://api.github.com/users/${username}/repos?per_page=100&sort=updated`);
+  const response = await fetch(
+    `https://api.github.com/users/${username}/repos?per_page=100&sort=updated`,
+  );
   if (!response.ok) {
     return [];
   }
