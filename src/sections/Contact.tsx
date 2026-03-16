@@ -1,12 +1,12 @@
 import { motion } from "motion/react";
 import { PORTFOLIO_DATA } from "../data/content";
-import { Mail, Github } from "lucide-react";
+import { Mail, Github, Phone } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 
 export function Contact() {
   const { language } = useLanguage();
   const data = PORTFOLIO_DATA[language];
-  const { email, github } = data.personal;
+  const { email, github, phone } = data.personal;
   const { title, description, emailBtn, githubBtn, footerRights } =
     data.contact;
 
@@ -52,6 +52,14 @@ export function Contact() {
               {githubBtn}
             </a>
           </div>
+
+          <a
+            href={`tel:${phone.replace(/\s+/g, "")}`}
+            className="inline-flex items-center gap-2 mt-8 text-zinc-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+          >
+            <Phone className="w-4 h-4" />
+            <span>{phone}</span>
+          </a>
         </motion.div>
       </div>
 

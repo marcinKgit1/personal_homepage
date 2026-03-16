@@ -7,6 +7,7 @@ export const PORTFOLIO_DATA = {
       github: "https://github.com/marcinKgit1",
       linkedin: "https://www.linkedin.com/in/marcin-koz%C5%82owski-3b7637272/",
       email: "marcinkozlowski390@gmail.com",
+      phone: "500 236 824",
     },
     about: {
       title: "O mnie",
@@ -131,6 +132,7 @@ export const PORTFOLIO_DATA = {
       github: "https://github.com/marcinKgit1",
       linkedin: "https://www.linkedin.com/in/marcin-koz%C5%82owski-3b7637272/",
       email: "marcinkozlowski390@gmail.com",
+      phone: "500 236 824",
     },
     about: {
       title: "About Me",
