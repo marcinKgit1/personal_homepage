@@ -49,6 +49,16 @@ export const PORTFOLIO_DATA = {
         demo: "https://marcinkgit1.github.io/B2B-Lead-Generator/",
       },
       {
+        title: "EnglishTree",
+        description:
+          "Aplikacja do nauki angielskiego z drzewem umiejetnosci, treningiem zdan i baza slow. Dane pobierane sa z Supabase, a publikacja odbywa sie przez GitHub Pages.",
+        tags: ["React", "TypeScript", "Supabase", "GitHub Pages"],
+        image:
+          "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=600&h=400&q=80",
+        github: "https://github.com/marcinKgit1/EnglishApp",
+        demo: "https://marcinkgit1.github.io/EnglishApp/",
+      },
+      {
         title: "Todo lista",
         description:
           "Nowoczesna aplikacja do zarządzania zadaniami z funkcjami priorytetyzacji, kategoryzacji i przypomnień. Zaprojektowana z naciskiem na przejrzysty interfejs i użyteczność (UX).",
@@ -172,6 +182,16 @@ export const PORTFOLIO_DATA = {
           "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&h=400&q=80",
         github: "https://github.com/marcinKgit1/B2B-Lead-Generator",
         demo: "https://marcinkgit1.github.io/B2B-Lead-Generator/",
+      },
+      {
+        title: "EnglishTree",
+        description:
+          "English learning web app with a skill tree, sentence practice, and a vocabulary base. Data is loaded from Supabase and deployed with GitHub Pages.",
+        tags: ["React", "TypeScript", "Supabase", "GitHub Pages"],
+        image:
+          "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=600&h=400&q=80",
+        github: "https://github.com/marcinKgit1/EnglishApp",
+        demo: "https://marcinkgit1.github.io/EnglishApp/",
       },
       {
         title: "Todo List",
